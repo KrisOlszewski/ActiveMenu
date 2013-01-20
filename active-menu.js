@@ -1,6 +1,6 @@
 // Utility function
-if ( typeof Object.create !== 'function' ) {
-	Object.create = function( obj ) {
+if (typeof Object.create !== 'function') {
+	Object.create = function(obj) {
 		function F() {}
 		F.prototype = obj;
 		return new F();
@@ -8,14 +8,14 @@ if ( typeof Object.create !== 'function' ) {
 }
 
 // Active Menu
-(function( $, window, document, undefined ) {
+(function($, window, document, undefined) {
 	
 	var ActiveMenu = {
 		init: function(options, container) {
 		
 			var self = this;
 
-			self.options = $.extend( {}, $.fn.setActiveMenu.options, options );
+			self.options = $.extend({}, $.fn.setActiveMenu.options, options);
 
 			self.pathname = window.location.pathname;
 			self.pathname = self.split(self.pathname);
@@ -82,4 +82,4 @@ if ( typeof Object.create !== 'function' ) {
 		indicator: 'active'
 	};
 
-})( jQuery, window, document );
+})(jQuery, window, document);
