@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<ul class="menu">
+			<li><a href="/">home</a></li>
+			<li><a href="/root/">root</a></li>
+			<li><a href="/root/dir/">dir</a></li>
+			<li><a href="/root/dir/filename.html">filename.html</a></li>
+		</ul>
+		
+		<ul class="menu2">
+			<li><a href="/">home</a></li>
+			<li><a href="/root/">root</a></li>
+			<li><a href="/root/dir/">dir</a></li>
+			<li><a href="/root/dir/filename.html">filename.html</a></li>
+		</ul>
+		
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="active-menu.js"></script>
+		<script>
+			
+			$('.menu').setActiveMenu();
+			
+			$('.menu2').setActiveMenu({
+				parent: false,
+				indicator: 'current'
+			});
+
+		</script>
+	</body>
+</html>
