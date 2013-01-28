@@ -48,7 +48,7 @@ if (typeof Object.create !== 'function') {
 				href = $link.attr('href'),
 				elem = (self.options.parent) ? $link.parent() : $link;
 			
-			(href === undefined) return;
+			if (href === undefined) {return;}
 			
 			href = self.split(href);
 			href = self.cleanup(href);
