@@ -1,14 +1,20 @@
-// Utility function
-if (typeof Object.create !== 'function') {
-	Object.create = function(obj) {
-		function F() {}
-		F.prototype = obj;
-		return new F();
-	};
-}
-
-// Active Menu
+/**
+ * active-menu.js
+ * Author & copyright (c) 2013: Kris Olszewski
+ * Dual MIT & GPL license
+ *
+ * Repo: https://github.com/KrisOlszewski/ActiveMenu/
+ */
 (function($, window, document, undefined) {
+	
+	// Utility function for older browsers
+	if (typeof Object.create !== 'function') {
+		Object.create = function(obj) {
+			function F() {}
+			F.prototype = obj;
+			return new F();
+		};
+	}
 	
 	var ActiveMenu = {
 		init: function(options, container) {
