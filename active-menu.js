@@ -1,4 +1,4 @@
-/**
+/*
  * active-menu.js
  * Author & copyright (c) 2013: Kris Olszewski
  * Dual MIT & GPL license
